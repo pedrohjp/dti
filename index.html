@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DepartamentoDeTI</title>
+    <link href="Outrun future.otf" rel="stylesheet">
+    <link href="Rocket Rinder.otf" rel="stylesheet">
+
+    <script>
+        function checkUsername() {
+            var username = document.getElementById("username").value
+            var password = document.getElementById("password").value
+            if (username == "pedro" || username == "gabriel" || username == "zilmar") {
+                if (password == "123") {
+                    window.location.href = 'index2.html';
+                }
+            } else {
+                alert("Usuário ou senha não encontrados.");
+            }
+
+        }
+    </script>
+
+    <style>
+        body {
+            background-image: url("synth.gif");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
+        #login {
+            font-family: 'Outrun future', sans-serif;
+            font-size: 75px;
+            background: linear-gradient(to right, #f8cdda, #fda085, #fd7b6c, #e80368, #9d0a58);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 5px 2px 30px rgba(255, 71, 38, 0.3);
+            animation: pulse 3s infinite;
+            margin-top: 10px;
+        }
+
+
+        #btn {
+            width: 130px;
+            height: 35px;
+            font-size: 18px;
+            margin-left: 40px;
+            font-family: 'Rocket Rinder', sans-serif;
+            border-radius: 10px;
+            background: linear-gradient(to top, #1b1bfc, #6464ff, #8d8dff, #c5c5ff, #FFFFFF);
+        }
+
+        button:hover {
+            filter: brightness(140%);
+        }
+
+
+        #txt {
+            font-family: 'Rocket Rinder', sans-serif;
+            font-size: 20px;
+            margin-left: 45px;
+        }
+
+        .ipt {
+            opacity: 0.5;
+            width: 200px;
+            height: 24px;
+            background-color: rgb(103, 255, 255);
+            border-radius: 10px;
+        }
+
+        .menuLogin {
+            margin-top: 40px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <h1 id="login">Departamento de TI</h1>
+        <div class="menuLogin">
+            <label id="txt" for="username">Username:</label><br>
+            <input class="ipt" type="text" id="username"><br>
+            <label id="txt" for="password">Password:</label><br>
+            <input class="ipt" type="password" id="password"><br><br>
+            <button id="btn" onclick="checkUsername()">Entrar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DepartamentoDeTI</title>
+    <link href="Outrun future.otf" rel="stylesheet">
+    <link href="Rocket Rinder.otf" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-image: url("synth.gif");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #btn {
+            width: 160px;
+            height: 35px;
+            font-size: 18px;
+            margin-left: 40px;
+            font-family: 'Rocket Rinder', sans-serif;
+            border-radius: 10px;
+            background: linear-gradient(to top, #1b1bfc, #6464ff, #8d8dff, #c5c5ff, #FFFFFF);
+        }
+
+        button:hover {
+            filter: brightness(140%);
+        }
+
+        #office {
+            background-image: url(office-icon.png);
+            background-size: 100%;
+            border: none;
+            cursor: pointer;
+            width: 90px;
+            height: 60px;
+            display: flex;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <button id="btn" onclick="window.location.href='index.html'">Desconectar</button>
+
+    <button id="office" onclick="window.open('http://192.168.100.116/soft/', '_blank')"></button>
+
+
+</body>
+
+</html>
